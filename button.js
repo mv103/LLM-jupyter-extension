@@ -33,7 +33,8 @@ async function apiCall() {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
-          'api-key': '417c5d059f2d47aca2bb66c8122083ec'
+          // hidden API key
+          'api-key': '' 
       },
       body: JSON.stringify(body)
   }).then(response => response.json());
