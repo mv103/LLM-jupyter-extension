@@ -78,7 +78,8 @@ export class ButtonExtension implements DocumentRegistry.IWidgetExtension<Notebo
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
-                            'api-key': '417c5d059f2d47aca2bb66c8122083ec'
+                            // use different key, API key hidden and rotated
+                            'api-key': ''
                         },
                         body: JSON.stringify(body)
                     }).then(response => response.json());
