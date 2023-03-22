@@ -1,0 +1,88 @@
+body {
+  background-color: #F5F5F5;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 15pt;
+}
+h1 {
+  color: #3C91E6;
+}
+/* typing effect style and animation */
+.typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: #3C91E6;
+  margin-left: 8px;
+}
+/* animation */
+@keyframes blink {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  100% {opacity: 0;}
+}
+/* Then, inside .input-cursor: */
+.input-cursor {
+animation: blink .6s linear infinite alternate;
+}
+
+/* form input styling */
+form {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+label {
+  text-align: left;
+  margin: 15px;
+  font-size: 20pt;
+}
+textarea {
+  margin: 25px;
+}
+#debug-btn {
+  text-align: right;
+  padding: 5px 25px;
+  display: inline-block;
+  border-radius: 15px;
+  font-family: "Share Tech Mono", monospace;
+  background-color: #3C91E6;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+#debug-btn:hover {
+  border-style: solid;
+  border-color: #7180AC;
+  background-color: #F5F5F5;
+}
+#output-container {
+  width: 40%;
+  float: right;
+  margin-right: 5%;
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+.tab {
+  display: inline-block;
+  margin-left: 40px;
+}
+.err-type {
+  color:#BF5B2A;
+}
+.code{
+  color: #BF5B2A;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+label {
+  color: #3C91E6;
+}

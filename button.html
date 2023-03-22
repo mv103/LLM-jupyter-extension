@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="button.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Flavors&family=Redacted+Script:wght@300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src='button.js'></script>
+    <title>Buggy</title>
+  </head>
+  <body>
+    <div class="typing-container">
+      <h1>Welcome to Buggy</h1>
+      <span class="input-cursor"></span>
+    </div>
+    <div class="content">
+      <form>
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaj9dNpEdibBy5XUs3YcWRiNR8WsO_1J6yl8VJ-rQ&s" alt="cat"> -->
+        <br>
+        <label for="error">Ask your question</label>
+        <br>
+        <textarea rows="20" cols="70" id="error"></textarea>
+        <br>
+        <br>
+        <input type="button" id="debug-btn" value="Debug" onclick="apiCall()">
+      </form>
+      <div id="output-container">
+          <p id="output"></p>
+      </div>
+    </div>
+    <footer>
+      <p>
+        &copy;2023 HCDE 496
+      </p>
+    </footer>
+  </body>
+</html>
