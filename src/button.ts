@@ -185,28 +185,32 @@ export class ButtonExtension implements DocumentRegistry.IWidgetExtension<Notebo
                 }
             </style>
           </head>
-          <body>
-            <div class="content">
-                <form>
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaj9dNpEdibBy5XUs3YcWRiNR8WsO_1J6yl8VJ-rQ&s" alt="cat">
-                  <br>
-                  <textarea rows="10" cols="50" id="code"></textarea>
-                  <br>
-                  <label for="code">Input your code snippet</label>
-                  <br>
-                  <br>
-                  <textarea rows="10" cols="50" id="error"></textarea>
-                  <br>
-                  <label for="error">Ask your question</label>
-                  <br>
-                  <br>
-                  <input type="button" id="debug-btn" value="Debug" onclick="apiCall()">
-                </form>
-                <div id="output-container">
-                    <p id="output"></p>
-                </div>
+           <body>
+            <div class="typing-container">
+              <h1>Welcome to Buggy</h1>
+              <span class="input-cursor"></span>
             </div>
-          </body>
+            <div class="content">
+              <form>
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaj9dNpEdibBy5XUs3YcWRiNR8WsO_1J6yl8VJ-rQ&s" alt="cat"> -->
+                <br>
+                <label for="error">Ask your question</label>
+                <br>
+                <textarea rows="20" cols="70" id="error"></textarea>
+                <br>
+                <br>
+                <input type="button" id="debug-btn" value="Debug" onclick="apiCall()">
+              </form>
+              <div id="output-container">
+                  <p id="output"></p>
+              </div>
+            </div>
+            <footer>
+              <p>
+                &copy;2023 HCDE 496
+              </p>
+            </footer>
+         </body>
         </html>`;
 
     const extensionUrl = URL.createObjectURL(
